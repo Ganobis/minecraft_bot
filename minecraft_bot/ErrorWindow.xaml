@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Error" Height="200" Width="350">
     <Grid>
-        <Button Content="OK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="125,129,0,0" RenderTransformOrigin="0.499,0.33" Click="clickbutton_error"/>
+        <Button Content="OK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="125,129,0,0" RenderTransformOrigin="0.499,0.33" Click="Clickbutton_error"/>
         <TextBlock Name="textbox_error" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="10,10,0,0" Height="114" Width="322" FontSize="16"/>
 
     </Grid>

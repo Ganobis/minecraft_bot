@@ -15,37 +15,29 @@ namespace minecraft_bot
             InitializeComponent();
         }
 
-        private void CaptureScreen()
+        private void Clickbutton_start_fishing(object sender, RoutedEventArgs e)
         {
             try
             {
                 CaptureBox capturebox = new CaptureBox();
                 capturebox.Show();
-
-                Bitmap bitmap = new Bitmap(600, 400);
-                Graphics g = Graphics.FromImage(bitmap);
-
-                textbox_fishing.Text = bitmap.Size.ToString();
-
-
-                //g.CopyFromScreen(position.Item1, position.Item2, 0, 0, bitmap.Size);
-
-                ImageWindow imageWindow = new ImageWindow();
-                imageWindow.inicialize_image(bitmap);
-                imageWindow.Show();
             }
-            catch(Exception exception)
+            catch (Exception exception)
             {
                 ErrorWindow errorWindow = new ErrorWindow();
-                errorWindow.inicialize_text(exception.ToString());
+                errorWindow.Inicialize_text(exception.ToString());
                 errorWindow.Show();
             }
+        }
+
+        private void Clickbutton_start_mine(object sender, RoutedEventArgs e)
+        {
 
         }
 
-        private void clickbutton_start_fishing(object sender, RoutedEventArgs e)
+        private void Clickbutton_exit(object sender, RoutedEventArgs e)
         {
-            CaptureScreen();
+            this.Close();
         }
     }
 }

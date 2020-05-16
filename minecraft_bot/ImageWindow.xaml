@@ -10,7 +10,7 @@
         Width="570" Height="454.894">
     <Grid>
         <Image Name="imagebox" HorizontalAlignment="Left" Height="369" VerticalAlignment="Top" Width="562"/>
-        <Button Content="OK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="40" Margin="452,374,0,0" Click="clickbutton_ok_imagewindow"/>
+        <Button Content="OK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="40" Margin="452,374,0,0" Click="Clickbutton_ok_imagewindow"/>
         <Button Content="Retry" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="40" Margin="10,374,0,0"/>
 
     </Grid>

@@ -15,12 +15,12 @@ namespace minecraft_bot
             textbox_error.Text = "Error:";
         }
 
-        public void inicialize_text(String text)
+        public void Inicialize_text(String text)
         {
             textbox_error.Text = "Error: " + text;
         }
 
-        private void clickbutton_error(object sender, RoutedEventArgs e)
+        private void Clickbutton_error(object sender, RoutedEventArgs e)
         {
             this.Close();
         }

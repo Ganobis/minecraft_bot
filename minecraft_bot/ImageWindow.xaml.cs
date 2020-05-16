@@ -17,7 +17,7 @@ namespace minecraft_bot
             InitializeComponent();
         }
 
-        internal void inicialize_image(Bitmap bitmap)
+        internal void Inicialize_image(Bitmap bitmap)
         {
             imagebox.Source = BitmapToImageSource(bitmap);
         }
@@ -38,7 +38,7 @@ namespace minecraft_bot
             }
         }
 
-        private void clickbutton_ok_imagewindow(object sender, RoutedEventArgs e)
+        private void Clickbutton_ok_imagewindow(object sender, RoutedEventArgs e)
         {
             this.Close();
         }

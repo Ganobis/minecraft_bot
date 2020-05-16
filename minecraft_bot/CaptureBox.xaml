@@ -11,7 +11,7 @@
     <Window.Background>
         <SolidColorBrush Opacity="0"/>
     </Window.Background>
-    <Grid MouseUp="mouse_up" MouseDown="mouse_press" Background="Green" Opacity="0.2">
+    <Grid MouseUp="Mouse_up" MouseDown="Mouse_press" Background="Green" Opacity="0.2">
         <TextBlock Name="xD" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Choose a part of the screen" VerticalAlignment="Top" FontSize="36" Foreground="Yellow" Opacity="3"/>
         <Canvas Name="canvas_livecheck">
             <Rectangle Name="canvas_rectangle" Fill="Red"/>

@@ -21,7 +21,7 @@ namespace minecraft_bot
         }
 
 
-        private void mouse_up(object sender, MouseButtonEventArgs e)
+        private void Mouse_up(object sender, MouseButtonEventArgs e)
         {
             position_up = Mouse.GetPosition(this);
 
@@ -39,6 +39,6 @@ namespace minecraft_bot
             canvas_rectangle.Height = Math.Abs(position_up.Y - position_press.Y);
         }
 
-        private void mouse_press(object sender, MouseButtonEventArgs e) => position_press = Mouse.GetPosition(this);
+        private void Mouse_press(object sender, MouseButtonEventArgs e) => position_press = Mouse.GetPosition(this);
     }
 }
