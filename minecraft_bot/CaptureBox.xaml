@@ -9,12 +9,17 @@
         WindowState="Maximized"
         AllowsTransparency="True" WindowStyle="None">
     <Window.Background>
-        <SolidColorBrush Opacity="0"/>
+        <SolidColorBrush/>
     </Window.Background>
-    <Grid MouseUp="Mouse_up" MouseDown="Mouse_press" Background="Green" Opacity="0.2">
-        <TextBlock Name="xD" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Choose a part of the screen" VerticalAlignment="Top" FontSize="36" Foreground="Yellow" Opacity="3"/>
+    <Grid MouseUp="Mouse_up" MouseDown="Mouse_press">
+        <Grid.Background>
+            <SolidColorBrush Color="Green" Opacity="0.15"/>
+        </Grid.Background>
+        <TextBlock Name="texbox_1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Choose a part of the screen" VerticalAlignment="Top" FontSize="36" Foreground="Yellow" Opacity="3"/>
         <Canvas Name="canvas_livecheck">
-            <Rectangle Name="canvas_rectangle" Fill="Red"/>
+            <Rectangle Name="canvas_rectangle" Fill="Red" Opacity="0.15"/>
+            <Button Name="button_ok" Canvas.Right="40" Canvas.Bottom="40" Height="50" Width="200" Click="Clickbutton_ok" Content="OK" FontSize="36" Visibility="Hidden"/>
+            <Button Name="button_retry" Canvas.Right="240" Canvas.Bottom="40" Height="50" Width="200" Click="Clickbutton_retry" Content="RETRY" FontSize="36" Visibility="Hidden"/>
         </Canvas>
     </Grid>
 </Window>

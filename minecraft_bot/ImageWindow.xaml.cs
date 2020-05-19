@@ -12,6 +12,8 @@ namespace minecraft_bot
     /// </summary>
     public partial class ImageWindow : Window
     {
+        private int height_ss, width_ss;
+        private System.Windows.Point position;
         public ImageWindow()
         {
             InitializeComponent();
@@ -41,6 +43,13 @@ namespace minecraft_bot
         private void Clickbutton_ok_imagewindow(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        public void TakeDimensions(System.Windows.Point position, int height, int width)
+        {
+            this.position = position;
+            height_ss = height;
+            width_ss = width;
         }
     }
 }
